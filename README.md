@@ -59,3 +59,12 @@ Static HTML, CSS, JS and `data/site.json`; no server, database or paid build too
 - Home pages include Person structured data.
 
 To appear in Google, go to https://search.google.com/search-console/ , add the **URL prefix** property `https://mmelmnyawey.pages.dev/` and complete verification. Submit `https://mmelmnyawey.pages.dev/sitemap.xml` under Sitemaps. Use URL Inspection to request crawling for the homepage and key pages. Google indexing is not automatic or guaranteed.
+
+## Owner-only article publishing workflow
+- Unlisted content editor: **https://mmelmnyawey.pages.dev/owner-publish.html**
+- This page is not linked from public navigation or the XML sitemap and sends a `noindex` directive, but its URL is **not authentication**. Anyone who learns the URL could see the empty editor. They cannot publish without authenticated GitHub write permission.
+- Fill the Arabic and English fields, preview, and use **Copy publishing data**.
+- Log into the owner's GitHub account. Open **https://github.com/Elmnyawey/mmelmnyawey/actions/workflows/publish-article.yml**, choose **Run workflow**, paste into `article_json`, and confirm.
+- The workflow validates fields and slug uniqueness, generates static pages in both languages, updates `data/content.json`, the English/Arabic article index pages and `sitemap.xml`, commits to `main`, then Cloudflare Pages deploys automatically.
+- If the workflow cannot commit, inspect **Settings → Actions → General → Workflow permissions** and grant **Read and write permissions**, and ensure Actions are enabled.
+- Articles become publicly visible after publishing. The publishing editor itself does not hold GitHub tokens, passwords or drafts on a server.
