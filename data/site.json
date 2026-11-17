@@ -6,11 +6,13 @@
     "location": "Egypt · Available for international remote collaboration",
     "phone": "+971 561604989",
     "email": "engmelmnyawey@gmail.com",
-    "linkedin": "",
+    "linkedin": "https://eg.linkedin.com/in/elmnyawey95",
     "facebook": "",
     "github": "https://github.com/Elmnyawey",
     "cvUrl": "",
-    "note": "LinkedIn and Facebook profile URLs can be added once confirmed. Please use your exact profile URLs, not search results."
+    "note": "LinkedIn and Facebook profile URLs can be added once confirmed. Please use your exact profile URLs, not search results.",
+    "portrait": "favicon.svg",
+    "heroIntro": "Civil & Structural Engineer experienced in Technical Office, BIM Coordination, Shop Drawings, and practical construction documentation across high-rise and infrastructure projects."
   },
   "projects": [
     {
@@ -47,7 +49,9 @@
           "url": "https://rmjm.com/wp-content/uploads/2024/02/280228_Cello-Residences_RMJM-PR.pdf"
         }
       ],
-      "gallery": []
+      "gallery": [],
+      "image": "https://empirecityuae.com/images/Dasha/Cello_by_Taraf/2026-02-03_19-51-16.png",
+      "imageCredit": "Empire City UAE / Cello by Taraf publicity rendering"
     },
     {
       "id": "timez",
@@ -60,7 +64,7 @@
       "employer": "Beijing Emirates International Construction Co. LLC",
       "role": "Technical Office Engineer",
       "period": "Mar 2026 – Present (CV dated Nov 2026)",
-      "overview": "TIMEZ by Danube is a high-rise residential project in Dubai Silicon Oasis. Its developer presents convertible studios and 1-bedroom layouts, with residential amenities. Trade publication MEED reported the appointment of Beijing Emirates International Construction as main contractor in January 2026 for a 43-storey development.",
+      "overview": "TIMEZ by Danube is a residential project in Dubai Silicon Oasis featuring 1,000 apartments across studio and one-, two-, and three-bedroom configurations, according to its developer, with planned handover Q2 2028. It incorporates convertible apartment layouts and a wide range of leisure facilities. This public project summary is separate from my technical office responsibilities.",
       "myWork": [
         "Managed material submittals, RFIs, technical correspondence and approval-tracking workflows.",
         "Reviewed architectural, structural and MEP drawings and checked alignment with consultant requirements.",
@@ -84,7 +88,9 @@
           "url": "https://guest.meed.com/danube-appoints-timez-residential-project-contractor/"
         }
       ],
-      "gallery": []
+      "gallery": [],
+      "image": "https://teslaproperties.ae/storage/off-plan-images/timez-by-danube-dubai-silicon-oasis/timezbydanubeexterior-1.webp",
+      "imageCredit": "Tesla Properties / Timez by Danube public rendering"
     },
     {
       "id": "haya",
@@ -97,7 +103,7 @@
       "employer": "During military service (see CV)",
       "role": "Technical Office Engineer",
       "period": "Dec 2023 – Dec 2024",
-      "overview": "Haya Karima (Decent Life) is a nationwide initiative to improve infrastructure and public services. Public reports on Dar El Salam, Sohag, described 113 planned projects in 2022, including sanitation, water, electricity, health units and service facilities. These are district-wide program figures, not work personally delivered by the engineer.",
+      "overview": "The nationwide Haya Karima (Decent Life) initiative improves rural infrastructure and public services. Public reporting for Dar El Salam in Sohag identifies 113 projects across 19 villages, including 24 new or upgraded health units, water and sanitation, bridges, power and service facilities. These figures describe the wider district initiative, not my individual work scope.",
       "myWork": [
         "Participated in architectural technical office and site coordination for public facilities.",
         "Reviewed architectural drawings, finishing details, material requirements and site quality.",
@@ -112,15 +118,17 @@
       ],
       "sources": [
         {
-          "title": "Government — Ministry of Local Development",
+          "title": "Government initiative information",
           "url": "https://mld.gov.eg/en/p/3063/ministry-initiatives-details?id=47"
         },
         {
-          "title": "Dar El Salam coverage — Youm7",
+          "title": "Dar El Salam public report — Youm7",
           "url": "https://www.youm7.com/story/2024/8/2/%D8%AA%D8%B9%D8%B1%D9%81-%D8%B9%D9%84%D9%89-%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%AF%D8%B1%D8%A9-%D8%A7%D9%84%D8%B1%D8%A6%D8%A7%D8%B3%D9%8A%D8%A9-%D9%84%D8%AD%D9%8A%D8%A7%D8%A9-%D9%83%D8%B1%D9%8A%D9%85%D8%A9-%D8%A8%D8%AF%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D8%B3%D9%88%D9%87%D8%A7%D8%AC/6657304"
         }
       ],
-      "gallery": []
+      "gallery": [],
+      "image": "https://img.youm7.com/ArticleImgs/2023/4/8/101537-%D9%85%D8%AC%D9%85%D8%B9-%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A%D8%A9-%D8%AF%D8%A7%D8%AE%D9%84-%D9%82%D8%B1%D9%8A%D8%A9--%284%29.jpg",
+      "imageCredit": "Youm7 / Dar El Salam public initiative coverage (illustrative)"
     }
   ],
   "education": [
@@ -143,5 +151,5 @@
       "note": "Advanced BIM modeling, family creation, information management, and coordination."
     }
   ],
-  "editorInstructions": "Edit data/site.json on GitHub to update text and contact links. Changes become visible on Cloudflare Pages automatically after deployment."
+  "editorInstructions": "Edit data/site.json using GitHub's pencil (Edit this file) button. Change profile.phone, profile.email, profile.linkedin, profile.facebook, project paragraphs or image URLs. Click Commit changes. Cloudflare Pages will rebuild when connected."
 }
