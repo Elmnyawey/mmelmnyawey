@@ -37,3 +37,25 @@ Static HTML, CSS, JS and `data/site.json`; no server, database or paid build too
 - `script.js` — navigation, project filters and content loader
 - `data/site.json` — editable bio, project notes, images, contact links
 - `favicon.svg` — photo-derived site icon
+
+## Arabic / English pages
+- English home: https://mmelmnyawey.pages.dev/
+- Arabic home: https://mmelmnyawey.pages.dev/ar/
+- Services: `/services.html` and `/ar/services.html`
+- Professional courses taken: `/courses.html` and `/ar/courses.html`
+- Articles: `/articles.html` and `/ar/articles.html`
+- Each article has its own English and Arabic URL.
+
+### Easy editing
+- Profile, contact, project images and descriptions: [data/site.json](https://github.com/Elmnyawey/mmelmnyawey/edit/main/data/site.json).
+- Arabic project text: [data/ar.json](https://github.com/Elmnyawey/mmelmnyawey/edit/main/data/ar.json).
+- Services, courses studied and articles in both languages: [data/content.json](https://github.com/Elmnyawey/mmelmnyawey/edit/main/data/content.json).
+- Edit data in the GitHub editor and commit. Pages use JavaScript to update live text from JSON while retaining static initial article text for indexing and offline fallback. For new articles (not editing existing ones), add a new linked HTML page or ask ChatGPT to generate one.
+
+### Google discovery
+- `robots.txt` allows crawling and declares the sitemap.
+- `sitemap.xml` lists English and Arabic pages.
+- Each page has a descriptive title, description, canonical and alternate-language URLs.
+- Home pages include Person structured data.
+
+To appear in Google, go to https://search.google.com/search-console/ , add the **URL prefix** property `https://mmelmnyawey.pages.dev/` and complete verification. Submit `https://mmelmnyawey.pages.dev/sitemap.xml` under Sitemaps. Use URL Inspection to request crawling for the homepage and key pages. Google indexing is not automatic or guaranteed.
