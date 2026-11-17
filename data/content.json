@@ -1,0 +1,214 @@
+{
+  "services": [
+    {
+      "id": "01",
+      "name": "Structural BIM Modeling",
+      "ar": "النمذجة الإنشائية باستخدام BIM",
+      "desc": "Revit-based structural models, coordinated views, drawings, and discipline interface checks.",
+      "arDesc": "إعداد نماذج إنشائية باستخدام Revit، وتنظيم المشاهد واللوحات ومراجعة التقاطعات مع بقية التخصصات.",
+      "items": [
+        "Structural modeling",
+        "Model-based drawings",
+        "Revit documentation"
+      ],
+      "arItems": [
+        "نمذجة إنشائية",
+        "رسومات من النموذج",
+        "توثيق Revit"
+      ]
+    },
+    {
+      "id": "02",
+      "name": "Shop Drawings & Technical Office",
+      "ar": "اللوحات التنفيذية والمكتب الفني",
+      "desc": "Technical drawing preparation, drawing review, RFIs, submittal tracking, and revision coordination.",
+      "arDesc": "إعداد ومراجعة اللوحات التنفيذية، والاستفسارات الفنية RFIs، ومتابعة التقديمات والمراجعات والتعديلات.",
+      "items": [
+        "Shop drawings",
+        "RFIs & submittals",
+        "Revision logs"
+      ],
+      "arItems": [
+        "لوحات تنفيذية",
+        "استفسارات وتقديمات",
+        "متابعة المراجعات"
+      ]
+    },
+    {
+      "id": "03",
+      "name": "BIM Coordination & Clash Review",
+      "ar": "تنسيق BIM ومراجعة التعارضات",
+      "desc": "Multi-disciplinary model review with Navisworks, clash identification and clear issue documentation.",
+      "arDesc": "مراجعة النماذج متعددة التخصصات باستخدام Navisworks وتحديد التعارضات وتوثيقها ومتابعتها.",
+      "items": [
+        "Navisworks",
+        "Clash reports",
+        "Model coordination"
+      ],
+      "arItems": [
+        "Navisworks",
+        "تقارير تعارضات",
+        "تنسيق النماذج"
+      ]
+    },
+    {
+      "id": "04",
+      "name": "Engineering Tracking Dashboards",
+      "ar": "لوحات متابعة المكتب الفني",
+      "desc": "Excel-based tracking for shop drawings, RFI status, material submittals and ready-for-site progress. Scoped to client needs.",
+      "arDesc": "تصميم ملفات Excel لمتابعة الرسومات والاستفسارات والتقديمات الفنية وجاهزية اللوحات للموقع، وفق نطاق العمل المتفق عليه.",
+      "items": [
+        "Excel dashboards",
+        "Approval tracking",
+        "Construction reporting"
+      ],
+      "arItems": [
+        "لوحات Excel",
+        "متابعة الاعتمادات",
+        "تقارير تقدم"
+      ]
+    },
+    {
+      "id": "05",
+      "name": "Drawing & Document Review",
+      "ar": "مراجعة الرسومات والمستندات",
+      "desc": "Technical coordination checks across architectural, structural, and MEP drawings before site implementation.",
+      "arDesc": "مراجعة التنسيق الفني بين الرسومات المعمارية والإنشائية والميكانيكية والكهربائية قبل التنفيذ.",
+      "items": [
+        "IFC reviews",
+        "Drawing coordination",
+        "Consultant comments"
+      ],
+      "arItems": [
+        "مراجعة IFC",
+        "تنسيق الرسومات",
+        "ملاحظات الاستشاري"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "name": "Structural BIM Diploma",
+      "ar": "دبلومة BIM الإنشائية",
+      "org": "Niqat",
+      "status": "In progress",
+      "arStatus": "قيد الدراسة",
+      "detail": "Advanced structural modeling, Revit families, BIM workflows, coordination, and information management.",
+      "arDetail": "نمذجة إنشائية متقدمة، وعائلات Revit، وتنسيق النماذج وإدارة معلومات BIM."
+    },
+    {
+      "name": "Structural BIM Diploma",
+      "ar": "دبلومة BIM الإنشائية",
+      "org": "Kaitech Solutions",
+      "status": "2025–2026",
+      "arStatus": "2025–2026",
+      "detail": "Revit Structure, Navisworks clash review, Dynamo, cloud collaboration, and BIM standards.",
+      "arDetail": "Revit Structure ومراجعة التعارضات باستخدام Navisworks وDynamo والتعاون السحابي ومعايير BIM."
+    },
+    {
+      "name": "Technical Office Engineering",
+      "ar": "هندسة المكتب الفني",
+      "org": "Eng. Adham Mahmoud",
+      "status": "2023–2024",
+      "arStatus": "2023–2024",
+      "detail": "Shop drawings, BOQs, technical submittals, MEP coordination, document control and contract workflows.",
+      "arDetail": "اللوحات التنفيذية وجداول الكميات والتقديمات الفنية وتنسيق MEP وضبط المستندات."
+    },
+    {
+      "name": "Structural Design Diploma",
+      "ar": "دبلومة التصميم الإنشائي",
+      "org": "Civil Academy",
+      "status": "2024",
+      "arStatus": "2024",
+      "detail": "Structural analysis and design using ETABS, SAFE and SAP with practical projects.",
+      "arDetail": "التحليل والتصميم الإنشائي باستخدام ETABS وSAFE وSAP والتطبيق على مشروعات."
+    },
+    {
+      "name": "Construction Quality (QA/QC)",
+      "ar": "ضبط جودة أعمال البناء",
+      "org": "Wattad",
+      "status": "2026",
+      "arStatus": "2026",
+      "detail": "Construction standards, testing, inspection plans, quality records and non-conformance management.",
+      "arDetail": "مواصفات البناء وخطط الفحص والاختبار وسجلات الجودة ومتابعة حالات عدم المطابقة."
+    },
+    {
+      "name": "Post-Tensioned Slab Design",
+      "ar": "تصميم البلاطات سابقة الإجهاد",
+      "org": "Udemy",
+      "status": "2025",
+      "arStatus": "2025",
+      "detail": "RAM Concept modeling, analysis and review for post-tensioned slab systems.",
+      "arDetail": "نمذجة وتحليل الأنظمة سابقة الإجهاد باستخدام RAM Concept."
+    }
+  ],
+  "articles": [
+    {
+      "slug": "shop-drawing-review",
+      "title": "Five checks before submitting shop drawings",
+      "arTitle": "خمس مراجعات مهمة قبل تقديم اللوحات التنفيذية",
+      "category": "Technical Office",
+      "arCategory": "المكتب الفني",
+      "excerpt": "A practical checklist to reduce avoidable consultant comments and site revisions.",
+      "arExcerpt": "قائمة عملية تقلل ملاحظات الاستشاري والتعديلات الممكن تجنبها بالموقع.",
+      "body": [
+        "Compare with the latest IFC drawings and specifications, not just the previous revision.",
+        "Check dimensions, levels, grids, openings, and references against the approved design.",
+        "Coordinate architectural, structural, and MEP interfaces — especially penetrations and ceiling zones.",
+        "Keep revisions visible and close out previous consultant comments systematically.",
+        "Before marking a drawing ready for site, confirm all dependencies, materials and required approvals."
+      ],
+      "arBody": [
+        "راجع أحدث إصدار من رسومات IFC والمواصفات، وليس الإصدار السابق فقط.",
+        "تحقق من الأبعاد والمناسيب والمحاور والفتحات ومراجع اللوحات ومطابقتها للاعتمادات.",
+        "راجع التنسيق بين المعماري والإنشائي وأعمال MEP، خصوصًا الفتحات ومناطق الأسقف.",
+        "وثّق المراجعات وأغلق ملاحظات الاستشاري السابقة بصورة منظمة.",
+        "قبل اعتبار اللوحة جاهزة للتنفيذ، تأكد من الاعتمادات والمواد والاشتراطات المرتبطة بها."
+      ]
+    },
+    {
+      "slug": "bim-clash-workflow",
+      "title": "A practical BIM clash coordination workflow",
+      "arTitle": "خطوات عملية لتنسيق تعارضات BIM",
+      "category": "BIM Coordination",
+      "arCategory": "تنسيق BIM",
+      "excerpt": "From federated models to useful, assigned clash reports.",
+      "arExcerpt": "من تجميع النماذج إلى تقارير تعارضات واضحة وموزعة على المسؤولين.",
+      "body": [
+        "Confirm that discipline models share the intended coordinates and agreed model versions.",
+        "Establish clash tests based on meaningful discipline interfaces rather than running every element against every element.",
+        "Classify results into real issues, tolerable proximities and duplicate/false-positive clashes.",
+        "Assign each issue to a responsible discipline with a clear view, element references and proposed action.",
+        "Re-run the tests after revised models arrive, maintaining a traceable issue status history."
+      ],
+      "arBody": [
+        "تأكد من توحيد الإحداثيات وإصدارات النماذج المستخدمة من كل تخصص.",
+        "جهّز اختبارات تعارضات تركز على العلاقات الفعلية بين التخصصات بدل فحص كل العناصر عشوائيًا.",
+        "صنّف النتائج إلى تعارضات فعلية وحالات مقبولة وتعارضات مكررة أو غير مؤثرة.",
+        "حدّد مسؤولية كل تعارض مع صورة واضحة ومراجع العناصر والإجراء المطلوب.",
+        "أعد الاختبارات بعد تحديث النماذج، واحتفظ بسجل واضح لحالة كل تعارض."
+      ]
+    },
+    {
+      "slug": "ready-for-site",
+      "title": "Approved is not always ready for site",
+      "arTitle": "اعتماد اللوحة لا يعني دائمًا جاهزيتها للتنفيذ",
+      "category": "Construction Workflow",
+      "arCategory": "إجراءات التنفيذ",
+      "excerpt": "Why a separate ready-for-site tracker can make drawing status more useful.",
+      "arExcerpt": "لماذا تحتاج حالة مستقلة لجاهزية الموقع بجانب اعتماد اللوحات.",
+      "body": [
+        "Approval confirms a review outcome; it does not automatically guarantee that every dependent trade or material is ready.",
+        "Track required materials, coordination dependencies, dimensions, changes and latest revisions independently.",
+        "Define what ready for site means for each drawing package with the construction team.",
+        "Use a dashboard that separates approval status from actual construction-readiness status."
+      ],
+      "arBody": [
+        "الاعتماد يوضح نتيجة مراجعة اللوحة، لكنه لا يعني تلقائيًا جاهزية كل الأعمال والمواد المرتبطة بها.",
+        "تابع المواد والاعتمادات المتداخلة والأبعاد والتغييرات وآخر إصدار بصورة مستقلة.",
+        "اتفق مع فريق الموقع على تعريف واضح لجاهزية كل حزمة رسومات.",
+        "استخدم لوحة متابعة تفصل بين حالة الاعتماد وحالة الجاهزية الفعلية للتنفيذ."
+      ]
+    }
+  ]
+}
