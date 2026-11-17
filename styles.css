@@ -91,3 +91,45 @@ a,button{transition:color .18s,background .18s,border-color .18s}
 @media(max-width:850px){.page-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.site-nav{gap:12px}.site-nav a{font-size:11px}}
 @media(max-width:700px){.page-grid{grid-template-columns:1fr;padding-bottom:55px}.page-hero{padding:58px 0 38px}[dir="rtl"] .metrics-strip>div{border-left:0}}
 @media(prefers-reduced-motion:reduce){.motion-reveal{opacity:1!important;transform:none!important;transition:none!important}.interactive-card{transform:none!important;transition:none!important}.button{transition:none!important}}
+
+/* Visual reference palette: graphite + warm yellow + soft mint */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Cairo:wght@400;500;600;700;800&display=swap');
+:root{--bg:#333639;--panel:#3d4144;--line:#64696b;--text:#f8f9f5;--muted:#d3d6d1;--accent:#f8bd38;--accent-soft:#c8f0c9}
+body{background:var(--bg);color:var(--text)}
+.site-header{background:#303336f5;border-color:#62686b}
+.hero{background:radial-gradient(circle at 72% 24%,#49504c,transparent 48%),#343739}
+.hero-art{background:linear-gradient(135deg,#464c4a,#303436);border-color:#818983}
+.eyebrow,.section-index,.service-id,.metric-no,.toolset>span,.page-card-kicker{color:var(--accent)}
+h1 em,.section h2 span,.background-section h2 span,.brand-mark span,.footer-brand span{color:var(--accent-soft)}
+.expertise-section{background:#3a3e40}
+.expertise-card,.project-card,.service-card,.course-card,.article-card{background:#414548;border-color:#696f70}
+.expertise-card{background:linear-gradient(135deg,#444947,#3c4142)}
+.expertise-card .service-icon{color:var(--accent)}
+.work-section{background:#35383a}
+.project-visual,.visual-timez,.visual-haya{background:linear-gradient(135deg,#656b60,#3b4142)}
+.filter-button{border-color:#777d75;color:#f0f2e9}
+.filter-button.active,.filter-button:hover,.button-primary{background:var(--accent);color:#242728}
+.background-section{background:#474b4a;color:#f4f6ef}
+.background-section .section-index,.timeline-date{color:var(--accent)}
+.background-intro,.timeline-item p{color:#d7ddd6}
+.timeline-item,.toolset{border-color:#6a716d}
+.toolset div{color:#e0e5df}.toolset b{color:var(--accent)}
+.contact-panel{background:linear-gradient(135deg,#d1f1ca,#a9d5b0);color:#2a3731}
+.contact-panel .section-index{color:#76551c}.contact-panel p,.contact-link,.contact-title{color:#384941}
+.contact-panel h2 em{color:#776222}
+.button-dark{background:#313738;color:#fff}.social-link{background:#394846}
+.project-source,.resource-link,.page-card-link{color:#ffe096}.detail-title{color:#f7c958}
+.project-meta{color:#e4e7e1}.service-tags{color:#cceccc}
+.brand-mark,.footer-brand,.nav-contact{border-color:#93988e}
+.hero-portrait{border-color:#f6c548}
+.language-switch{border-color:#8f958a;color:#ffda82!important}.language-switch:hover{background:#505752}
+.page-hero{background:radial-gradient(circle at 78% 18%,#555c52,transparent 42%),#343739}
+.page-card-badge{background:#5d624d;color:#d9f1c8}
+.article-detail{background:#414548;border-color:#777b74}
+.article-body{color:#e7eae4}
+.scroll-progress{background:linear-gradient(90deg,#ffc13c,#c6edbf)}
+.interactive-card{background-image:radial-gradient(circle at var(--mx,50%) var(--my,50%),#f9c34618,transparent 46%)}
+.interactive-card:hover{border-color:#e7c771}
+body,h1,h2,h3{font-family:'DM Sans',Arial,sans-serif}
+h1,h2,h3,.page-hero h1,.section-headline h2,.expertise-card h3{font-family:'Barlow Condensed','DM Sans',Arial,sans-serif;letter-spacing:.008em}
+[dir="rtl"],[dir="rtl"] h1,[dir="rtl"] h2,[dir="rtl"] h3,[dir="rtl"] button,[dir="rtl"] .site-nav,[dir="rtl"] .button{font-family:'Cairo',Tahoma,Arial,sans-serif;letter-spacing:0}
