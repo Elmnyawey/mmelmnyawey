@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow, noarchive"><meta name="theme-color" content="#343739"><title>محرر المقالات | إدارة الموقع</title><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css"><style>
+.publisher{max-width:1000px;margin:36px auto 80px;padding:0 20px}.publisher h1{font-size:clamp(31px,5vw,52px)}.publisher-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.publisher-card{padding:22px;background:#424647;border:1px solid #737a74;border-radius:12px;margin:22px 0}.publisher label{display:block;font-weight:700;margin:13px 0 5px;color:#f7e2b9}.publisher input,.publisher textarea{width:100%;border:1px solid #949996;border-radius:7px;background:#303537;color:#fff;font:inherit;padding:11px;line-height:1.8}.publisher textarea{min-height:125px;resize:vertical}.publisher input:focus,.publisher textarea:focus{outline:2px solid #ffcb5d}.publisher small{color:#d1dbd0}.publisher .button{border:0;border-radius:7px;cursor:pointer}.publisher .button-secondary{background:transparent;color:#fff;border:1px solid #999}.publisher-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:26px 0}.publisher pre{direction:ltr;text-align:left;white-space:pre-wrap;overflow-wrap:anywhere;background:#292f31;padding:16px;border-radius:8px;font-size:12px;max-height:320px;overflow:auto}.publisher .validation{font-weight:700;color:#f6cb74}.publisher ol{padding-inline-start:28px}.publisher .notice{border-inline-start:4px solid #f8bd38;padding:14px 18px;background:#55554a}.publisher .preview{background:#303b3b;padding:20px;border-radius:10px}.publisher .preview h2{color:#f9c956;margin:0}.publisher .preview p{color:#dce8d9}.publisher [hidden]{display:none!important}@media(max-width:760px){.publisher-grid{grid-template-columns:1fr}}
+</style></head>
+<body><header class="site-header"><div class="container header-inner"><a class="brand" href="/ar/"><span class="brand-mark">M<span>.</span>E</span><span class="brand-title">محمد المنياوي</span></a><span>إدارة المقالات — حساب المالك</span></div></header>
+<main class="publisher"><p class="section-index">PRIVATE WORKFLOW / ARTICLE PUBLISHER</p><h1>إضافة مقال جديد</h1><p>اكتب المقال بالعربي والإنجليزي، وراجع معاينته، ثم انسخ بيانات النشر وافتح GitHub Actions. النشر الفعلي يحتاج تسجيل الدخول إلى GitHub بحساب عنده صلاحية على المستودع.</p>
+<div class="notice"><strong>مهم:</strong> الصفحة دي مش موجودة في قائمة الموقع ولا في Sitemap، وGoogle مطلوب منه ما يفهرسها. لكن رابطها مش كلمة سر. الحماية الحقيقية إن النشر محصور في صلاحيات GitHub. متشاركش رابط الإدارة، ومتدخلش أي Tokens أو كلمات مرور في الصفحة.</div>
+<form id="publisher-form" autocomplete="off">
+<div class="publisher-card"><h2>1. إعداد المقال</h2><label for="slug">رابط مختصر بالإنجليزي — Slug</label><input id="slug" name="slug" placeholder="revit-coordination-tips" required maxlength="80" pattern="[a-z0-9]+(-[a-z0-9]+)*" dir="ltr"><small>حروف إنجليزية صغيرة وأرقام وشرطة - فقط. لا تغيّره بعد النشر.</small></div>
+<div class="publisher-grid">
+<section class="publisher-card"><h2>2. النسخة العربية</h2><label for="arTitle">عنوان المقال</label><input id="arTitle" required maxlength="180" placeholder="كيفية مراجعة الرسومات التنفيذية"><label for="arCategory">التصنيف</label><input id="arCategory" required maxlength="100" value="المكتب الفني"><label for="arExcerpt">وصف مختصر</label><textarea id="arExcerpt" required maxlength="340" placeholder="ملخص يظهر في صفحة المقالات..."></textarea><label for="arBody">محتوى المقال</label><textarea id="arBody" required rows="12" placeholder="اكتب فقرة أو نقطة في كل سطر..."></textarea><small>كل سطر غير فارغ يظهر كنقطة في المقال، بحد أقصى 50 سطرًا.</small></section>
+<section class="publisher-card"><h2>3. English version</h2><label for="title">Article title</label><input dir="ltr" id="title" required maxlength="180" placeholder="How to review shop drawings"><label for="category">Category</label><input dir="ltr" id="category" required maxlength="100" value="Technical Office"><label for="excerpt">Short description</label><textarea dir="ltr" id="excerpt" required maxlength="340" placeholder="A short summary for the articles index"></textarea><label for="body">Article content</label><textarea dir="ltr" id="body" rows="12" required placeholder="Write one paragraph or point per line..."></textarea><small>Each non-empty line becomes one numbered item.</small></section>
+</div>
+<div class="publisher-actions"><button type="button" class="button button-primary" id="preview-btn">معاينة المقال</button><button type="submit" class="button button-primary">تجهيز بيانات النشر</button><button type="reset" class="button button-secondary">مسح الحقول</button></div>
+<p id="validation" class="validation" role="status" aria-live="polite"></p>
+<div id="preview" class="publisher-card" hidden><h2>معاينة سريعة</h2><div class="publisher-grid"><div class="preview" id="preview-ar" dir="rtl"></div><div class="preview" id="preview-en" dir="ltr"></div></div></div>
+<div id="publish-result" class="publisher-card" hidden><h2>4. انشر من حساب GitHub</h2><p>انسخ البيانات بالزر ثم افتح رابط GitHub Actions. اختار <b>Run workflow</b> والصق البيانات في حقل <b>article_json</b>، ثم شغّل العملية. Cloudflare هينشر المقال تلقائيًا بعد تنفيذ العملية بنجاح.</p><div class="publisher-actions"><button class="button button-primary" id="copy-btn" type="button">نسخ بيانات النشر</button><a class="button button-secondary" target="_blank" rel="noopener noreferrer" href="https://github.com/Elmnyawey/mmelmnyawey/actions/workflows/publish-article.yml">افتح GitHub Actions ↗</a></div><pre id="json-output"></pre></div>
+</form>
+<div class="publisher-card"><h2>معلومات مهمة</h2><ol><li>أول مرة قد تحتاج تفعيل GitHub Actions من تبويب Actions، والسماح للـ Actions بالكتابة في المستودع من الإعدادات.</li><li>لو عنوان الـSlug موجود بالفعل، النشر هيتوقف؛ غيّر الاسم.</li><li>محتوى المقالات المنشورة <strong>عام</strong> ويظهر في صفحات المقالات بالعربي والإنجليزي.</li><li>صفحة الإدارة دي نفسها مش محتاجة كلمة مرور لأنها لا تحفظ ولا تنشر شيئًا بدون GitHub.</li></ol></div>
+<a href="/ar/articles.html" class="page-card-link">↗ العودة للمقالات المنشورة</a>
+</main>
+<script>
+(()=>{
+ const by=id=>document.getElementById(id),form=by('publisher-form');let payload='';
+ const read=()=>({slug:by('slug').value.trim().toLowerCase(),title:by('title').value.trim(),arTitle:by('arTitle').value.trim(),category:by('category').value.trim(),arCategory:by('arCategory').value.trim(),excerpt:by('excerpt').value.trim(),arExcerpt:by('arExcerpt').value.trim(),body:by('body').value.split(/\r?\n/).map(x=>x.trim()).filter(Boolean),arBody:by('arBody').value.split(/\r?\n/).map(x=>x.trim()).filter(Boolean)});
+ function valid(p){
+  if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(p.slug)||p.slug.length>80)return'الرابط المختصر غير صحيح.';
+  for(const key of ['title','arTitle','category','arCategory','excerpt','arExcerpt'])if(!p[key])return'لازم تكمل جميع العناوين والتصنيفات والأوصاف بالعربي والإنجليزي.';
+  if(!p.body.length||!p.arBody.length||p.body.length>50||p.arBody.length>50)return'اكتب من 1 إلى 50 سطرًا لكل نسخة.';
+  if(JSON.stringify(p).length>50000)return'المقال كبير جدًا؛ اختصر النص.';
+  return '';
+ }
+ function preview(){const p=read(),error=valid(p);by('validation').textContent=error;if(error)return false;
+  for(const [el,title,desc,arr] of [['preview-ar',p.arTitle,p.arExcerpt,p.arBody],['preview-en',p.title,p.excerpt,p.body]]){
+   const node=by(el);node.replaceChildren();const h=document.createElement('h2');h.textContent=title;const s=document.createElement('p');s.textContent=desc;const list=document.createElement('ol');arr.forEach(t=>{const li=document.createElement('li');li.textContent=t;list.append(li)});node.append(h,s,list);
+  }by('preview').hidden=false;return true;
+ }
+ by('preview-btn').addEventListener('click',preview);
+ form.addEventListener('submit',e=>{e.preventDefault();if(!preview())return;payload=JSON.stringify(read());by('json-output').textContent=payload;by('publish-result').hidden=false;by('validation').textContent='البيانات جاهزة. النشر الحقيقي يتم من حساب GitHub فقط.';by('publish-result').scrollIntoView({behavior:'smooth',block:'start'});});
+ by('copy-btn').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(payload);by('validation').textContent='اتنسخت البيانات. افتح GitHub Actions والصقها في article_json.'}catch{const t=by('json-output');const selection=window.getSelection(),range=document.createRange();range.selectNodeContents(t);selection.removeAllRanges();selection.addRange(range);by('validation').textContent='انسخ النص المحدد بـ Ctrl+C.'}});
+ form.addEventListener('reset',()=>{payload='';by('publish-result').hidden=true;by('preview').hidden=true;by('validation').textContent=''});
+})();
+</script>
+</body></html>
