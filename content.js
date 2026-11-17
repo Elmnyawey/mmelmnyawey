@@ -1,0 +1,10 @@
+/* Single-file editor for services, training and article bodies.
+   HTML provides crawlable fallbacks; JSON supplies subsequent content changes. */
+(()=>{const ar=document.documentElement.lang==="ar",prefix=ar?"/":"./";async function init(){let data;try{const r=await fetch("/data/content.json",{cache:"no-cache"});if(!r.ok)return;data=await r.json()}catch{return;}
+const path=location.pathname;
+const set=(node,s)=>{if(node&&s!==undefined)node.textContent=s};
+if(/services\.html$/.test(path)){document.querySelectorAll(".service-card").forEach((card,i)=>{const x=data.services?.[i];if(!x)return;set(card.querySelector("h2"),ar?x.ar:x.name);set(card.querySelector("p"),ar?x.arDesc:x.desc);const tags=card.querySelector(".project-tools");if(tags){tags.replaceChildren();(ar?x.arItems:x.items||[]).forEach(t=>{const n=document.createElement("span");n.textContent=t;tags.append(n)})}});}
+if(/courses\.html$/.test(path)){document.querySelectorAll(".course-card").forEach((card,i)=>{const x=data.courses?.[i];if(!x)return;set(card.querySelector(".page-card-kicker"),x.org);set(card.querySelector("h2"),ar?x.ar:x.name);set(card.querySelector(".page-card-badge"),ar?x.arStatus:x.status);set(card.querySelector("p"),ar?x.arDetail:x.detail);});}
+if(/articles\.html$/.test(path)){document.querySelectorAll(".article-card").forEach((card,i)=>{const x=data.articles?.[i];if(!x)return;set(card.querySelector(".page-card-kicker"),ar?x.arCategory:x.category);set(card.querySelector("h2"),ar?x.arTitle:x.title);set(card.querySelector("p"),ar?x.arExcerpt:x.excerpt);});}
+const slug=path.match(/\/articles\/([\w-]+)\.html$/)?.[1];if(slug){const x=data.articles?.find(v=>v.slug===slug);if(x){set(document.querySelector(".page-hero h1"),ar?x.arTitle:x.title);set(document.querySelector(".page-hero> .container>p:last-child"),ar?x.arExcerpt:x.excerpt);const list=document.querySelector(".article-body ol");if(list){list.replaceChildren();(ar?x.arBody:x.body).forEach(item=>{const li=document.createElement("li");li.textContent=item;list.append(li)})}}}
+}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();})();
