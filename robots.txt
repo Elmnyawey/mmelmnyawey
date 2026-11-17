@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mmelmnyawey.pages.dev/sitemap.xml
